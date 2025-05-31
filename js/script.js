@@ -17,7 +17,7 @@ function renderNews(page) {
       <h2>${news.title}</h2>
       <p><em>${news.date}</em></p>
       <p>${news.text}</p>
-      ${news.image ? `<img src="${news.image}" alt="${news.title}" style="max-width:100%;">` : ''}
+      ${news.image ? `<img src="${news.image}" alt="${news.title}" width="560" height="315">` : ''}
       ${news.video ? `<iframe width="560" height="315" src="${news.video.replace("watch?v=", "embed/")}" frameborder="0" allowfullscreen></iframe>` : ''}
       <hr>
     `;
